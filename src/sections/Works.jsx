@@ -6,7 +6,7 @@ export const Works = ({ onButtonClick, title = "titulo", description = "descripc
     const stateClassName = estado ? 'work-content-card-data-buttons-state visited' : "work-content-card-data-buttons-state new"
 
     const artIndex = articleIndex
-    const handleclick = (index) => {
+    const handleClick = (index) => {
         onButtonClick(index);   
         console.log(workImageSrc);
     }
@@ -24,7 +24,7 @@ export const Works = ({ onButtonClick, title = "titulo", description = "descripc
                     <div className="work-content-card-data-buttons">
                         <span className={stateClassName}> {text} </span>
                         <button> git hub </button>
-                        <button onClick={() => handleclick(artIndex)}>ver mas</button>
+                        <button onClick={() => handleClick(artIndex)}>ver mas</button>
                     </div>
                 </section>
             </section>
