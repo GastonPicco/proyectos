@@ -1,0 +1,44 @@
+.about-me-container {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background-color: var(--conteiner);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.267);
+    margin-bottom: 40px;
+}
+.about-me-description{
+    display: inline-flex;
+    justify-content: space-around;
+    padding: var(--midMargin);
+    column-gap: var(--midMargin);
+}
+.about-me-description-text{
+    background-color: var(--color1);
+}
+.about-me-description-image{
+    object-fit:cover;
+    min-width: 40%;
+    max-height:300px;
+}
+.about-me-description-image-inner{
+    object-fit:cover;
+    max-width: 150px;
+    display: none;
+}
+@media (max-width: 768px) {
+    .about-me-description{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-description-image{
+        display: none;
+    }
+    .about-me-description-image-inner{
+        display: block;
+        width: 50vw;
+        max-width: 300px;
+        float: right;
+        padding: 10px;
+        padding-top: 0px;
+    }
+  }

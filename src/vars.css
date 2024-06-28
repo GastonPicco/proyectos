@@ -1,0 +1,24 @@
+:root{
+    --var-hight: 4rem;
+    --color1:  #14151f ;
+    --color2:  #213166 ;
+    --color11:  #1c1d23 ;
+    --color22:  #213166 ;
+    --color12:  #1E1C23 ;
+    --color23:  #54394D ;
+    --color3:  #F9B562 ;
+    --conteiner: rgba(0, 0, 0, 0.160);
+    --color3alt:  #F9F871 ;
+    --color3border:#54394D;
+    --color3Buttons:#D57D67;
+    --color4:  #33a6e4 ;
+    --color5:   #54394D;
+    --midBorderRadius: 14px ;
+    --maxBorder: 6px;
+    --midBorder: 2px;
+    --minBorder: 2.3px;
+    --midMargin: 15px;
+    --contentMaxWidth: 1200px;
+    --subtitlesHight: 40px;
+    --paddingForContent: 10px;
+  }

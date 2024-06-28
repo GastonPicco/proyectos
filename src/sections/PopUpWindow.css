@@ -1,0 +1,178 @@
+:root{
+    --gizmoColorOn:  #4d7cbe2f ;
+    --gizmoColorOff:  #4d7cbe00 ;
+}
+
+
+.transparent-background-popup
+{
+    background-color: rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    font-size: 20px;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.none{
+    display:none;
+}
+.pop-up-window{
+    color: white;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.267);
+    width: 1200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 600px;
+}
+.popUpContent{
+    display: flex;
+    height: calc(100% - 60px);
+    background-color: var(--color1);
+}
+.popUpTitle{
+    padding: 5px var(--midMargin);
+    background-color: var(--color5);
+    background: linear-gradient(30deg, var(--color1), var(--color2), var(--color1));
+    align-content: center;
+    height: 60px;
+}
+.popUpMediaArea{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 8px;
+    background-color: rgb(12, 12, 12);
+    margin: 4px;
+    margin-bottom: 0px;
+}
+.popUpMedia{
+    object-fit:contain;
+    min-height: 80%;
+}
+.popUpMediaSelector{
+    display: flex;
+    gap: 8px;
+    overflow-x:auto;
+    margin-top: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-user-drag: none;
+    transition: all 1s ease;
+    z-index: 4;
+}
+.popUpTextArea{
+    padding: 15px;
+    padding-top: 10px;
+    overflow: auto;
+    padding-bottom: 90px;
+}
+.popUpTextArea::-webkit-scrollbar { 
+    background: linear-gradient(45deg, var(--color1), var(--color1), var(--color1));
+    width: 10px;
+    position: absolute;
+}
+.popUpTextArea::-webkit-scrollbar-thumb { 
+    background-color: var(--color2);
+    background: linear-gradient(0deg, var(--color1), var(--color2), var(--color1));
+    border-radius: 45%;
+}
+
+.popUpMediaSelector::-webkit-scrollbar { 
+    background-color: none;
+    height: 15px;
+    position: absolute;
+}
+.popUpMediaSelector::-webkit-scrollbar-thumb { 
+    background-color: #88888817;
+    cursor: grab;
+    border-top: solid rgb(12, 12, 12) 8px;
+    background: linear-gradient(90deg, rgb(12, 12, 12), #88888817, rgb(12, 12, 12));
+}
+:hover.popUpMediaSelector::-webkit-scrollbar-thumb { 
+    background-color: var(--color2);
+    background: linear-gradient(30deg, var(--color1), var(--color2), var(--color1));
+    border-top: solid rgb(12, 12, 12) 4px;
+}
+.imageToSelect{
+    object-fit:scale-down;
+}
+.horizontalBox{
+    background-color: var(--gizmoColorOn);
+    position: absolute;
+    width: 1200px;
+    height: calc((100% - 80%)/2)
+}
+.top{
+    top:0;
+}
+.bottom{
+    bottom:0;
+}
+.sideBox{
+    background-color: var(--gizmoColorOn);
+    position: absolute;
+    height: 100%;
+    width: calc((100% - 1200px)/2);
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+
+@media (max-height: 750px) {
+    .horizontalBox{
+        background-color: var(--gizmoColorOn);
+        position: absolute;
+        width: 1200px;
+        height: 0px
+    }
+  }
+  @media (max-width: 800px) {
+    .pop-up-window{
+        height: 80%;
+        min-height: 100%;
+        width: 90%;
+    }
+    .popUpContent{
+        flex-direction: column;
+
+    }
+    .popUpMediaArea{
+        width: 100%;
+        height: 75vw;
+        flex-grow: auto;
+        max-width: 100%;
+        max-height: 55%;
+    }
+    .popUpMedia{
+        object-fit:contain;
+        height: 70%;
+    }
+    .popUpMediaSelector{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .imageToSelect{
+        height: 100%;
+    }
+    .popUpTextArea{
+        padding: 15px;
+        padding-top: 10px;
+        overflow: auto;
+    }
+    .popUpMediaSelector::-webkit-scrollbar { 
+        background-color: none;
+        height: 0px;
+        position: absolute;
+    }
+  }
+

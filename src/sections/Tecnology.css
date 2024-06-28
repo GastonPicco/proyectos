@@ -1,0 +1,150 @@
+.tecnology-content{
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.267);
+    margin-bottom: 40px;
+    padding: var(--paddingForContent);
+}
+.tecnology-content-description{
+    background-color: var(--color1);
+}
+.tecnology-content-description-title{
+    display: flex;
+    justify-content: center;
+    color: var(--color3alt);
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.tecnology-content-description-text{
+    text-align:left;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 40px;
+}
+.tecnology-content-description-text strong{
+    color: var(--color4);
+
+}
+
+.tecnology-content-areas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: calc(25vw + var(--subtitlesHight) - ((var(--paddingForContent)*5)/4));
+    max-height: calc((var(--contentMaxWidth)/4) + (var(--subtitlesHight) - ((var(--paddingForContent)*5)/4)));
+    width: 100%;
+    max-width: 1200px;
+    column-gap: var(--paddingForContent);
+}
+
+.tecnology-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color3alt);
+    font-size: 20px;
+    text-align: center;
+    height: var(--subtitlesHight);
+    background-color: transparent
+}
+
+.tecnology-content-areas-section{
+    background-color: var(--color1);
+    height: calc(25vw - ((var(--paddingForContent)*5)/4));
+    max-height: calc(300px - ((var(--paddingForContent)*5)/4));
+    box-shadow: inset 0px 0px 120px rgba(0, 0, 0, 0.247), inset 0px 0px 0px rgba(255, 187, 0, 0);
+    transition: box-shadow 0.8s ease-in-out;
+    display: grid;
+}
+.tecnology-content-areas-section.nine{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.tecnology-content-areas-section.four{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.tecnology-content-areas-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconFromTec{
+    object-fit: fill;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding: 12px;
+    filter: blur(0px)saturate(1)opacity(0.8)drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.349));
+    transition: all 0.15s ease-in-out;
+}
+.textFromTec{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 0.6rem;
+    font-weight: 800;
+    transform: rotate(10deg);
+    height: 0px;
+    transition: all 0.3s;
+    user-select: none;
+}
+:hover.tecnology-grid-element .textFromTec{
+    color: white;
+    transform: rotate(0deg);
+    font-size: 1.1rem;
+}
+.tecnology-content-areas-section.four .iconFromTec{
+    width: 80%;
+}
+:hover.iconFromTec{
+    object-fit: fill;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding: 6px;
+    filter: blur(0px)saturate(1)drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.336));;
+}
+.grid-image{
+overflow: hidden;
+}
+.inner-image{
+    object-fit:contain;
+    transform: translateX(-25%);
+    height: 100%;
+    transition:  all 0.3s;
+}
+:hover.inner-image{
+    object-fit:contain;
+    transform: translateX(-15%);
+    height: 100%
+}
+@media (max-width: 768px){
+    .tecnology-content-areas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-height: calc(((var(--contentMaxWidth)/2) + (var(--subtitlesHight) - ((var(--paddingForContent)*3)/2)))*2);
+        height: calc((100vw + var(--subtitlesHight)*2 - ((var(--paddingForContent)*3)/2)*2));
+        column-gap: var(--paddingForContent);
+    }
+    .tecnology-content-areas section{
+        background-color: var(--color1);
+        height: calc(50vw - ((var(--paddingForContent)*3)/2));
+        max-height: calc(600px - ((var(--paddingForContent)*3)/2));
+    }
+    .tecnology-subtitle{
+        font-size: 3vw;
+    }
+    .tecnology-content-description-title{
+        font-size: 13px;
+    }
+    .tecnology-content-description-text{
+        font-size: 12px;
+    }
+}

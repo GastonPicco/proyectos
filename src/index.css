@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+  margin: 0;
+  background-color: var(--color1);
+  background: linear-gradient(30deg, var(--color1), var(--color2), var(--color1));
+  font-family: system-ui;
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+.in-main{
+  max-width: 1200px;
+  backdrop-filter: blur(1px);
+  }
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+}
+.dinamic-screen{
+  width: 100%;
+  height: auto;
+}
+.fixedtest{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+br{
+  line-height: 1rem;
+}
+a.popLink:link {
+  color: var(--color3alt); /* Color del enlace por defecto */
+}
+
+a.popLink:visited {
+  color: var(--color3); /* Color del enlace visitado */
+}
+strong.noColorStrong{
+  color: white;
+}
+strong.colorStrong3alt{
+  color: var(--color3alt);
+}
+.lessImportant{
+  color: rgba(255, 255, 255, 0.2);
+}
+:hover.lessImportant{
+  color: rgba(255, 255, 255, 0.5);
+}
+.none {
+  display: none;
+}
