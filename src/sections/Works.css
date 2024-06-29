@@ -55,10 +55,12 @@
 
 .work-content-card-data-text li {
     font-size: 14px;
+    list-style-type: none;
 }
 
 .work-content-card-data-text ul {
     padding-bottom: 5px;
+    list-style-type: none;
 }
 
 .work-content-card-data-buttons {
