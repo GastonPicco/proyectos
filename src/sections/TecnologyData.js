@@ -1,8 +1,7 @@
 const TecnologyData = 
-[
+
 {
 text: `
-<br>
 <p>Estas son las tecnologías y herramientas en las que trabajo y aprendo, además de otras que estoy explorando para futuros proyectos. 
 En el ámbito del <strong>backend</strong>, estoy aprendiendo Node.js y Java, y ya tengo experiencia práctica con MongoDB y JS.<br/><br/>
     En el <strong>front-end</strong>, he profundizado en React para crear interfaces de usuario. También tuve una 
@@ -19,6 +18,6 @@ En el ámbito del <strong>backend</strong>, estoy aprendiendo Node.js y Java, y 
     con las mismas y aprender más.</strong>
 </p>
   `
-},
-];
+};
+
 export default TecnologyData;

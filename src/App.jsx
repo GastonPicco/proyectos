@@ -6,6 +6,9 @@ import { Works } from './sections/Works.jsx'
 import { AboutMeText } from './sections/AboutMeText.jsx'
 import { PopUpWindow } from './sections/PopUpWindow.jsx'
 import worksData from './sections/WorksData.js'
+import AboutMeData from './sections/AboutMeData.js'
+import TecnologyData from './sections/TecnologyData.js'
+
 
 
 export const App = () => {
@@ -61,7 +64,9 @@ export const App = () => {
         <div className='dinamic-screen'>
           { <Aboutme
             image={"background"}
-            text={<AboutMeText></AboutMeText>}
+            text={<AboutMeText
+            text={AboutMeData.text}
+            ></AboutMeText>}
           /> }
         </div>
         <div className='dinamic-screen'>

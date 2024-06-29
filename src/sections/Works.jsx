@@ -14,13 +14,13 @@ export const Works = ({ onButtonClick, title = "titulo", description = "descripc
         <div>
             <section id="proyects" className="work-content-card">
                 <div className="work-content-card-div">
-                <img className="work-content-card-image-holder-img" src={`assets/${workImageSrc[0]}`} alt=""/>
+                <img onClick={() => handleClick(artIndex)} className="work-content-card-image-holder-img" src={`assets/${workImageSrc[0]}`} alt=""/>
                 </div>
                 
                 <img className="work-content-card-proyect-type" src={`assets/${workTypeLogo}`}/>
                 <section className="work-content-card-data">
                     <h4 className="work-content-card-data-title">{title}</h4>
-                    <p className="work-content-card-data-text">{description}</p>
+                    <p className="work-content-card-data-text" dangerouslySetInnerHTML={{ __html: description }}></p>
                     <div className="work-content-card-data-buttons">
                         <span className={stateClassName}> {text} </span>
                         <button> git hub </button>

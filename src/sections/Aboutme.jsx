@@ -1,5 +1,5 @@
 import './Aboutme.css'
-export const Aboutme = ({image = null, text}) => {
+export const Aboutme = ({image = null, text = null}) => {
 
     return (
         <div id='aboutMe' className='about-me-container'>

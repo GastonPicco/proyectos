@@ -17,13 +17,34 @@
 }
 .about-me-description-image{
     object-fit:cover;
-    min-width: 40%;
-    max-height:300px;
+    min-width: 30%;
+    max-height:380px;
 }
 .about-me-description-image-inner{
     object-fit:cover;
     max-width: 150px;
     display: none;
+}
+.about-me-title{
+    position: relative;
+    display:flex;
+    color: var(--color3alt);
+    text-align: center;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    translate: -50%;
+    margin: 5px;
+}
+
+.about-me-text{
+    color: white;
+    font-size: 16px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    height: 100%;
+    padding-bottom: 4vw;
 }
 @media (max-width: 768px) {
     .about-me-description{
@@ -41,4 +62,11 @@
         padding: 10px;
         padding-top: 0px;
     }
-  }
+    .about-me-title{
+        font-size: 13px;
+    }
+    
+    .about-me-text{
+        font-size: 12px;
+    }
+}

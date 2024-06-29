@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import "./Tecnology.css"
 import TecnologyData from './TecnologyData.js'
+import AboutMeData from './AboutMeData.js';
 
-export const Tecnology = ({ title = "titulo", text = TecnologyData[0].text, title_1 = "titulo 1", title_2 = "titulo 2", title_3 = "titulo 3", title_4 = "titulo 4" }) => {
+export const Tecnology = ({ title = "titulo", text = TecnologyData.text, title_1 = "titulo 1", title_2 = "titulo 2", title_3 = "titulo 3", title_4 = "titulo 4" }) => {
 
     return (
         <section id="tecnologys" className="tecnology-content">
