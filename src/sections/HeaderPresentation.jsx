@@ -9,10 +9,14 @@ export const HeaderPresentation = ({avatar_src}) => {
             targetSection.scrollIntoView({ behavior: 'smooth' });
           }
       };
+      const handleClick = () => {
+        window.location.href = 'https://www.linkedin.com/in/gast%C3%B3n-picco-b3a889283/';
+      };
+    
     return (
         <div className="container">
             <header className="navegation-bar">
-                    <button className='navegation-bar-button'>contacto</button>
+                    <button className='navegation-bar-button' onClick={handleClick}>contacto</button>
                     <button className='navegation-bar-button' onClick={() => SectionScroll('aboutMe')}>sobre mi</button> 
                     <button className='navegation-bar-button' onClick={() => SectionScroll('tecnologys')}>tecnologias</button> 
                     <button className='navegation-bar-button' onClick={() => SectionScroll('proyects')}>proyectos</button> 
@@ -26,7 +30,7 @@ export const HeaderPresentation = ({avatar_src}) => {
                         <h2>Desarrollador</h2><h2 className='deco'> Web</h2><h2> y de</h2><br/> <h2 className='deco'>Videojuegos</h2>
                     </div>
                 </div>
-                <button className='big-picture-contact-button'>contacto</button>
+                <button className='big-picture-contact-button' onClick={handleClick} >contacto</button> 
             </div>
         </div>  );
 };
