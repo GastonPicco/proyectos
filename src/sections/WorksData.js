@@ -192,7 +192,7 @@ const worksData =
             <h5> Assets:</h5>
             <ul><li> • Models 3D propios, Blender.</li></ul>
             `,
-            text: "texto",
+            text: 'El último proyecto del segundo año en el Instituto Bios fue recrear el Pacman, pero esta vez en 3D. El objetivo fue más simple de lo que esperaba: mejorar lo hecho anteriormente en 2D a una versión 3D y añadir más niveles.<br><br>Lo primero y principal para mí fue crear modelos llamativos. Primero hice un mapa en tiles para que cada pieza pudiera combinarse con cualquier otra para generar un mapa. Luego, creé modelos basados en vóxeles para cada personaje del videojuego y sus distintos estados.<br><br>Después, me metí en el código, creando todos los prefabs necesarios para que el juego funcionara correctamente y solucionando problemas que tuve con la versión 2D de Pacman. Esta versión, en lugar de usar triggers como la anterior, utiliza varios raycasts para restringir el movimiento y generar una movilidad fluida.<br><br>También mejoré mucho la IA, haciéndola aún más fiel a los comportamientos originales y eliminando bugs de la versión 2D, como los bucles en "L" de los fantasmas, los cambios de sentido de 180 grados y el modo de huida de los fantasmas al agarrar un punto grande. Este es uno de mis proyectos favoritos porque creo que logré un resultado muy bueno y lo resolví de maneras mucho más inteligentes.',
             imagePaths: ["pacman3/game.jpg", "pacman3/inspector.jpg", "pacman3/menu.jpg", "pacman3/menugif.gif", "pacman3/bggif.gif", "pacman3/level1gif.gif", "pacman3/level2gif.gif", "pacman3/level3gif.gif",],
             state: "false",
             gitPath: "null",
