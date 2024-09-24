@@ -10,7 +10,7 @@ export const HeaderPresentation = ({avatar_src}) => {
           }
       };
       const handleClick = () => {
-        window.location.href = 'https://www.linkedin.com/in/gast%C3%B3n-picco-b3a889283/';
+        window.location.href = 'https://www.linkedin.com/in/sebasti%C3%A1n-picco-b3a889283/';
       };
     
     return (
